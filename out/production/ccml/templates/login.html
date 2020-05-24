@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>登录页面</title>
+    <link rel="icon" th:href="@{/picture/login.ico}" type="image/x-icon" />
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}">
+    <link rel="stylesheet" th:href="@{/css/modules/font-awesome-4.7.0/css/font-awesome.min.css}">
+    <script th:src="@{/js/modules/jquery.min.js}"></script>
+    <script th:src="@{/js/login.js}"></script>
+
+</head>
+
+<body>
+	<div id="login">
+    	<div id="box">
+			<h2>星辰大海</h2>
+			<div id="login_form">
+				<form>
+					<div id="login_form_left"></div>
+					<div id="border_right"></div>
+					<div id="login_form_right">
+						<div class="form_input">
+							<label>用户名：</label>
+							<input type="text" name="username" placeholder="请输入用户名" />
+							<a id="icon_username" href="javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a>
+						</div>
+						<div class="form_input">
+							<label>密码：</label>
+							<input id="password" type="password" name="password" placeholder="请输入密码" />
+							<a id="icon_password" href="javascript:showHidePsw()"><i class="fa fa-eye" aria-hidden="true"></i></a>
+						</div>
+						<div id="button">
+							<button class="button" id="signin">登录</button>
+							<button class="button" id="reset">重置</button>
+						</div>
+					</div>
+				</form>
+			</div>
+    	</div>
+    </div>
+</body>

@@ -1,6 +1,7 @@
 package com.yqz.zzh.mapper;
 
 import com.yqz.zzh.pojo.User;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -13,4 +14,6 @@ import java.util.List;
 @Repository
 public interface UserMapper {
     public List<User> getUsers();
+
+    List<User> getUserByUserNameAndPwd(@Param("username") String username, @Param("password")String password);
 }

@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #002F72;
+    background: url('../bgimg/login_body1.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#login {
+    width: 1200px;
+    overflow: hidden;
+}
+
+#login #box {
+    width: 700px;
+    height: 390px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 50px #9ecaed inset;
+    background: #002F72;
+    filter:alpha(opacity=90); -moz-opacity:0.9; -khtml-opacity: 0.9; opacity: 0.9;
+}
+
+#box h2 {
+    width: 700px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: rgba(0, 0, 0, .5);
+    margin: 0;
+}
+
+#login #login_form {
+    height: 290px;
+    position: relative;
+}
+
+#login #login_form_left {
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    background: orange;
+    width: 35%;
+    height: 200px;
+    background-image: url('../bgimg/login_form_left.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*中间到两端变细*/
+#border_right {
+    position: absolute;
+    top: 60px;
+    left: 45%;
+    height: 200px;
+    width: 1px;
+    background: radial-gradient(white 24%, #002F72 100%);
+}
+
+
+#login #login_form_right {
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    width: 330px;
+    height: 290px;
+}
+
+/* 表单input样式 start*/
+.form_input {
+	width: 100%;
+	height: 30px;
+	margin-top: 20px;
+}
+.form_input label{
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	color:white;
+	font-size: 1em;
+	letter-spacing: 2px;
+	width:100px;
+	line-height: 30px;
+	display: inline-block;
+	text-align: right;
+}
+.form_input input {
+    float: right;
+    border: 2px solid #144989;
+    border-radius: 2px;
+    font-family: 'Open Sans', sans-serif;
+    color:white;
+    font-size: 1em;
+    height: 30px;
+    padding: 0 16px;
+    transition: background 0.3s ease-in-out;
+    background: #003F85;
+    letter-spacing: 2px;
+
+}
+
+input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    background: #002F72;
+}
+
+/* input[id="password1"]{
+    background: url('../picture/invisible.jpg') ;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+input[id="password2"]{
+    background: url('../picture/visible.jpg') ;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: right center;
+} */
+.form_input{
+    position: relative;
+}
+.form_input #icon_password,.form_input #icon_username{
+    position: absolute;
+    right: 5px;
+    margin-top: 7px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    color: #000;
+}
+
+.button {
+    -webkit-appearance: none;
+    background: #0D95D0;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+    width: 100px;
+}
+
+.button:hover {
+    background: #00c8ff;
+}
+
+/* 表单input样式 end*/
+#button{
+    width: 260px;
+    margin-top: 30px;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
+#signin{
+}
+#reset{
+}

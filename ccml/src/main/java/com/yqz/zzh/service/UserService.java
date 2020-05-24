@@ -11,4 +11,6 @@ import java.util.List;
  */
 public interface UserService {
     public List<User> getUsers();
+
+    List<User> getUserByUserNameAndPwd(String username, String password);
 }
