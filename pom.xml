@@ -40,7 +40,7 @@
         <zkclient.version>0.1</zkclient.version>
         <spring-boot-devtools.version>2.2.2.RELEASE</spring-boot-devtools.version>
         <spring-boot-starter-test.version>2.2.6.RELEASE</spring-boot-starter-test.version>
-        <junit.version>4.13</junit.version>
+        <junit.version>4.13.1</junit.version>
         <druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
         <thymeleaf.version>3.0.0.RELEASE</thymeleaf.version>
         <bcprov-jdk15on.version>1.64</bcprov-jdk15on.version>
